@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="header">
+                <div class="left">
+                    <p>Library</p>
+                </div>
+            </div>
+            <div class="button">
+                <button class="btn" onclick="openForm()">+ Add New Book</button>
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                  
+                      <label for="author"><b>Author</b></label>
+                      <input type="text" placeholder="author name" name="author" required>
+                  
+                      <label for="title"><b>Title</b></label>
+                      <input type="text" placeholder="Enter title" name="title" required>
+
+                      <label for="pages"><b>Pages number</b></label>
+                      <input type="number" placeholder="Enter pages" name="pages" required>
+
+                      <label for="read">Have you read it</label>
+                      <input type="checkbox" name="read" id="read">
+                      
+
+                      <button type="button" class='btn' id="submit-btn">Add</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+        <div class="book-card-container">
+
+        </div>
+        <div class="footer">
+            12345
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
